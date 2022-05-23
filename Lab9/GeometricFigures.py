@@ -3,3 +3,6 @@ class GeometricFigures:
         self.name = name
         self.dimension = dimension
         self.quantity = quantity
+
+    def show(self):
+        print(self.name, self.dimension, self.quantity)

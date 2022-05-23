@@ -6,8 +6,8 @@ class Circle(GeometricFigures):
         super().__init__(name, dimension, quantity)
         self.no_corners = no_corners
 
-    def print_circle(self):
-        return f"{self.name},{self.dimension},{self.quantity},{self.no_corners}"
+    def show(self):
+        print(self.name, self.dimension, self.quantity, self.no_corners)
 
 
 class Triangle(GeometricFigures):
@@ -15,8 +15,8 @@ class Triangle(GeometricFigures):
         super().__init__(name, dimension, quantity)
         self.corners = corners
 
-    def print_triangle(self):
-        return f"{self.name},{self.dimension},{self.quantity},{self.corners}"
+    def show(self):
+        print(self.name, self.dimension, self.quantity, self.corners)
 
 
 class Cylinder(GeometricFigures):
@@ -24,8 +24,8 @@ class Cylinder(GeometricFigures):
         super().__init__(name, dimension, quantity)
         self.volume = volume
 
-    def print_cylinder(self):
-        return f"{self.name},{self.dimension},{self.quantity},{self.volume}"
+    def show(self):
+        print(self.name, self.dimension, self.quantity, self.volume)
 
 
 class Cone(GeometricFigures):
@@ -33,8 +33,8 @@ class Cone(GeometricFigures):
         super().__init__(name, dimension, quantity)
         self.looks_like_a_pyramid = looks_like_a_pyramid
 
-    def print_cone(self):
-        return f"{self.name},{self.dimension},{self.quantity},{self.looks_like_a_pyramid}"
+    def show(self):
+        print(self.name, self.dimension, self.quantity, self.looks_like_a_pyramid)
 
 
 class Sphere(GeometricFigures):
@@ -42,5 +42,5 @@ class Sphere(GeometricFigures):
         super().__init__(name, dimension, quantity)
         self.exist = exist
 
-    def print_sphere(self):
-        return f"{self.name},{self.dimension},{self.quantity},{self.exist}"
+    def show(self):
+        print(self.name, self.dimension, self.quantity, self.exist)
